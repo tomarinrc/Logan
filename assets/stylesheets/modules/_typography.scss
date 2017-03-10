@@ -1,0 +1,13 @@
+//Font Definitions
+$bcfont-body: 'Lato', sans-serif;
+$bcfont-head: 'Open Sans Condensed', sans-serif;
+
+//Font Scaling
+body {
+    font-family: $bcfont-body;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $bcfont-head;
+}
