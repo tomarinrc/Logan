@@ -4,13 +4,13 @@ aside {
     height: 100vh;
     position: fixed;
     left: -80vw;
-    background: $bc-back;
+    background: white;
     z-index: 999;
     overflow-y: scroll;
     transition: 200ms;
     nav {
         width: 80vw;
-        background: white;
+        background: #3D5866;
         position: fixed;
         z-index: 1005;
     }

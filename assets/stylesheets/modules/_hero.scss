@@ -1,34 +1,45 @@
 .hero {
     @include container(100%);
     position: relative;
-    float: left;
-    overflow: hidden;
-    //overflow-x: scroll;
-    figure {
-        margin: 0;
-        min-width: 10000vw;
-        position: relative;
-        left: 0;
+    background-image: url('assets/images/hero-1.png');
+    padding: 6vh 0;
+    background-size: cover;
+    h1 {
+	    text-align: center;
+	    font-weight: normal;
+	    margin: 0 span(.5);
+	    color: white;
+	    line-height: 1.4em;
+	    letter-spacing: 1px;
+	    font-size: 1.8rem;
+    }
+    p {
+	    margin: 1em span(.5);
+	    line-height: 1.4em;
+	    text-align: center;
+	    color: white;
+	    font-size: 1rem;
     }
     img {
-        display: block;
-        float: left;
-        width: 100vw;
-        height: auto;
-        &:last-of-type {
-            clear: right;
-        }
+	    position: absolute;
+	    top: 2vh;
+		left: 8vw;
+		width: 32vw;
+		height: auto;
+		opacity: .4;
     }
-    figcaption {
-        display: block;
-        float: left;
-        width: 100vw;
-        height: auto;
-        padding: 2em 4vw;
-        background: white;
-        box-sizing: border-box;
-        &:first-of-type {
-            clear: left;
-        }
+    a.call-to-action {
+	    @include span(8);
+	    display: block;
+	    text-transform: uppercase;
+	    color: #3D5866;
+	    background: white;
+	    text-align: center;
+	    padding: 1rem;
+	    border-radius: 8px;
+	    margin: 2vh span(2);
+	    text-decoration: none;
+	    font-weight: bold;
+	    font-size: 1rem;
     }
 }
